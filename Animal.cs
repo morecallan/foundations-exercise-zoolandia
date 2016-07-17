@@ -1,16 +1,13 @@
 using System;
+using Zoolandia.Species;
 
 namespace Zoolandia
 {
     public class Animal
     {
-        public Animal(string name, string diet, string reproduction, bool cute, bool nocturnal)
+        public Animal(string name)
         {
             this.Name = name;
-            this.Diet = diet;
-            this.Reproduction = reproduction;
-            this.Cute = cute;
-            this.Nocturnal = nocturnal;
         }
 
         public string Name {get; set;}
