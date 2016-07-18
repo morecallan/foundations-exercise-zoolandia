@@ -8,9 +8,10 @@ namespace Zoolandia.Species
         public CondyluraCristata(string name) : base(name)
         {
             this.Diet = "omnivorous";
-            this.Reproduction = "prudes";
+            this.Reproduction = "Prude";
             this.Cute = false;
             this.Nocturnal = true;
+            this.Species = "Condylura Cristata";
         }
     }
 }

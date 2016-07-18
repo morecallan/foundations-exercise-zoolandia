@@ -8,9 +8,10 @@ namespace Zoolandia.Species
         public AilurusFulgens(string name) : base(name)
         {
             this.Diet = "carnivorous";
-            this.Reproduction = "swingers";
+            this.Reproduction = "Swinger";
             this.Cute = true;
             this.Nocturnal = true;
+            this.Species = "Ailurus Fulgens";
         }
     }
 }

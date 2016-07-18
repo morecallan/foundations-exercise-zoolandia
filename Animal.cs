@@ -14,7 +14,8 @@ namespace Zoolandia
         public string Diet{get; set;}
         public string Reproduction{get; set;}
         public bool Cute{get; set;}
-        public bool Nocturnal{get;set;}
+        public bool Nocturnal{get; set;}
+        public string Species{get; set;}
         
 
         private string Chew() {
@@ -27,21 +28,35 @@ namespace Zoolandia
             {
                 return "YOU BASTARD. FEED ME.";
             } else {
-                return this.Chew() + "YUM!";
+                return this.Chew() + " YUM!";
             }
         }
 
         private string Sleeptime() {
             if (this.Nocturnal) {
                 return "daytime";
+
             } else {
                 return "nighttime";
             }
         }
 
-        public virtual string Sleep(int numberOfFoods)
+        public virtual string Sleep()
         {
-            return "Oh, hey look, its" + this.Sleeptime() + " this animal is fast asleep.";
+            return "Oh, hey look, its " + this.Sleeptime() + ". " + this.Name +  " is fast asleep.";
+        }
+
+        private string CuteLine() {
+            if (this.Cute == true) {
+                return "is effin adorable.";
+            } else {
+                return "is a hideous monster.";
+            }
+        }
+
+        public string Bio()
+        {
+            return "Behold! A glorious " + this.Species + " in it's natural habitat. Our friend, " + this.Name + " " + CuteLine() + " What type of sexy is " + this.Name + "? " + this.Reproduction + ". " + this.Sleep() + " Let's try feeding our new friend, " + this.Name + ".";
         }
     }
 }

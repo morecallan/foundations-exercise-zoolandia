@@ -8,9 +8,10 @@ namespace Zoolandia.Species
         public CricetulusGriseus(string name) : base(name)
         {
             this.Diet = "omnivorous";
-            this.Reproduction = "cannibals";
+            this.Reproduction = "Cannibal";
             this.Cute = true;
             this.Nocturnal = true;
+            this.Species = "Cricetulus Griseus";
         }
     }
 }

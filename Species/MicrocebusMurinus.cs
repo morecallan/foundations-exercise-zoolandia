@@ -8,9 +8,10 @@ namespace Zoolandia.Species
         public MicrocebusMurinus(string name) : base(name)
         {
             this.Diet = "herbivorous";
-            this.Reproduction = "swingers";
+            this.Reproduction = "Swinger";
             this.Cute = true;
             this.Nocturnal = true;
+            this.Species = "Microcebus Murinus";
         }
     }
 }
