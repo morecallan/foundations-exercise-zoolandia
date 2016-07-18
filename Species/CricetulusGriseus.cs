@@ -13,5 +13,9 @@ namespace Zoolandia.Species
             this.Nocturnal = true;
             this.Species = "Cricetulus Griseus";
         }
+
+        public override string Sleep() {
+            return base.Sleep() + " When it gets cold enough, " + this.Name + " will hibernate!";
+        }
     }
 }

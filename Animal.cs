@@ -26,9 +26,9 @@ namespace Zoolandia
         {
             if (numberOfFoods <= 0)
             {
-                return "YOU BASTARD. FEED ME.";
+                return this.Name + " says: YOU BASTARD. FEED ME.";
             } else {
-                return this.Chew() + " YUM!";
+                return this.Name + " says: " + this.Chew() + " YUM!";
             }
         }
 
