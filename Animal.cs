@@ -1,4 +1,5 @@
 using System;
+using Zoolandia.Species;
 
 namespace Zoolandia
 {
@@ -10,10 +11,52 @@ namespace Zoolandia
         }
 
         public string Name {get; set;}
+        public string Diet{get; set;}
+        public string Reproduction{get; set;}
+        public bool Cute{get; set;}
+        public bool Nocturnal{get; set;}
+        public string Species{get; set;}
+        
+
+        private string Chew() {
+            return "nom nom nom";
+        }
 
         public virtual string Eat(int numberOfFoods)
         {
-            return "YUM!";
+            if (numberOfFoods <= 0)
+            {
+                return "YOU BASTARD. FEED ME.";
+            } else {
+                return this.Chew() + " YUM!";
+            }
+        }
+
+        private string Sleeptime() {
+            if (this.Nocturnal) {
+                return "daytime";
+
+            } else {
+                return "nighttime";
+            }
+        }
+
+        public virtual string Sleep()
+        {
+            return "Oh, hey look, its " + this.Sleeptime() + ". " + this.Name +  " is fast asleep.";
+        }
+
+        private string CuteLine() {
+            if (this.Cute == true) {
+                return "is effin adorable.";
+            } else {
+                return "is a hideous monster.";
+            }
+        }
+
+        public string Bio()
+        {
+            return "Behold! A glorious " + this.Species + " in it's natural habitat. Our friend, " + this.Name + " " + CuteLine() + " What type of sexy is " + this.Name + "? " + this.Reproduction + ". " + this.Sleep() + " Let's try feeding our new friend, " + this.Name + ".";
         }
     }
 }
