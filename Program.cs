@@ -1,5 +1,7 @@
 ﻿using System;
 using Zoolandia.Species;
+using System.Collections.Generic;
+
 
 namespace Zoolandia
 {
@@ -17,6 +19,7 @@ namespace Zoolandia
             int numOfFoodsInput = Int32.Parse(Console.ReadLine());
             Console.WriteLine(redPanda.Eat(numOfFoodsInput));
 
+            
 
             CondyluraCristata starNosedMole = new CondyluraCristata("Hector");
             Console.WriteLine(starNosedMole.Bio());
@@ -25,9 +28,24 @@ namespace Zoolandia
             MicrocebusMurinus grayMouseLemur = new MicrocebusMurinus("Lem");
             Console.WriteLine(grayMouseLemur.Bio());
 
+            Console.WriteLine("Which do you want to learn more about? (Type the number in your command line.)");
 
+            List<Animal> myZoo = new List<Animal>();
 
-            
+            //Adding items to a list is really easy
+            myZoo.Add(redPanda);
+            myZoo.Add(starNosedMole);
+            myZoo.Add(chineseHamster);
+            myZoo.Add(grayMouseLemur);
+
+            for (int i = 0; i < myZoo.Count; i++)
+            {
+                Console.WriteLine(i + ": " + myZoo[i].Species);
+            }
+
+            Console.Write(prompt);
+            int userWantsToKnowMoreAbout = Int32.Parse(Console.ReadLine());
+            Console.WriteLine(myZoo[userWantsToKnowMoreAbout].Bio());
         }
     }
 }

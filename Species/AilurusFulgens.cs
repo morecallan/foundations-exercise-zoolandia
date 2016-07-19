@@ -15,7 +15,6 @@ namespace Zoolandia.Species
         }
 
         //Grooming: occurs while in a tree and shortly after awakening or eating
-
         private string Grooming() {
             return "Check it out! " + this.Name + " is using this opporunity to groom in a cat-like, sitting posture. Tongue is applied to legs, chest, flanks, tail, and genitals with a downward motion";
         }

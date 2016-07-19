@@ -5,9 +5,16 @@ namespace Zoolandia
 {
     public class Animal
     {
+        //Constructor is what you want to know before you interact with them
         public Animal(string name)
         {
             this.Name = name;
+        }
+
+        public Animal(string name, int age) 
+        {
+            this.Name = name;
+            this.Age = age;
         }
 
         public string Name {get; set;}
@@ -16,6 +23,7 @@ namespace Zoolandia
         public bool Cute{get; set;}
         public bool Nocturnal{get; set;}
         public string Species{get; set;}
+        public int Age{get; set;}
         
 
         private string Chew() {
