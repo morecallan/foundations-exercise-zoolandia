@@ -51,7 +51,25 @@ namespace Zoolandia
 
         public virtual string Sleep()
         {
-            return "Oh, hey look, its " + this.Sleeptime() + ". " + this.Name +  " is fast asleep.";
+            DateTime now = DateTime.Now;
+            int currentHour = now.Hour;
+            bool dayTime;
+            string stringTime;
+            if (currentHour > 4 && currentHour < 9) {
+                dayTime = true;
+                stringTime = "daytime";
+            } else {
+                dayTime = false;
+                stringTime = "nighttime";
+            }
+
+            string sleepingResponse;            
+            if (dayTime == this.Nocturnal) {
+                sleepingResponse = "Oh, hey look, its " + stringTime + ". " + this.Name +  " is fast asleep.";
+            } else {
+                sleepingResponse = "Oh, hey look, its " + stringTime + ". " + this.Name +  " is wide awake! " + this.Name + " sleeps during the " + this.Sleeptime() + ".";                
+            }
+            return sleepingResponse;
         }
 
         private string CuteLine() {
