@@ -15,10 +15,8 @@ namespace Zoolandia.Species
             this.Species = "Condylura Cristata";
         }
 
-        public override string Sleep() {
-            DateTime now = DateTime.Now;
-            
-            return "";
+        public override string Eat(int numberOfFoods) {
+            return base.Eat(numberOfFoods) + " Thanks for the " + numberOfFoods + " worms, dude.";
         }
 
     }

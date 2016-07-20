@@ -53,6 +53,7 @@ namespace Zoolandia
         {
             DateTime now = DateTime.Now;
             int currentHour = now.Hour;
+            
             bool dayTime;
             string stringTime;
             if (currentHour > 4 && currentHour < 9) {
