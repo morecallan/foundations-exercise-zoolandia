@@ -15,9 +15,14 @@ namespace Zoolandia
             AilurusFulgens redPanda = new AilurusFulgens("Randy Panda");
             CondyluraCristata starNosedMole = new CondyluraCristata("Hector");
             CricetulusGriseus chineseHamster = new CricetulusGriseus("Wang Haw");
-            MicrocebusMurinus grayMouseLemur = new MicrocebusMurinus("Lem", 10);
+            MicrocebusMurinus grayMouseLemur = new MicrocebusMurinus("Lem");
+            MicrocebusMurinus greyMouseLemurAged = new MicrocebusMurinus(10);
+            MicrocebusMurinus greyMouseLemurNamedAndAged = new MicrocebusMurinus("Lem", 10);
 
             Console.WriteLine(grayMouseLemur.Age);
+            Console.WriteLine(greyMouseLemurAged.Age);
+            Console.WriteLine(greyMouseLemurNamedAndAged.Age);
+            
 
             
 
@@ -68,6 +73,7 @@ namespace Zoolandia
     // Choose one of the general methods that you created in the Animal class and make it virtual.
     // Add a new, overloaded constructor method to your animal that takes a single string as an argument.
     // Add another overloaded constructor method that will set the value of one of the int typed properties of your animal. Define an integer as an argument and then create another instance of your animal and pass it an integer.
+    // Add ONE MORE constructor method! This method will accept both an integer and a string as arguments. Set the appropriate property values with the argument values.
 //Create 3 species classes
     // Create a constructor function for each of your animals. The constructor function should, at the very least, set the initial name of all animals of that type to a name of your choosing.
     // Derive properties and methods from Animal

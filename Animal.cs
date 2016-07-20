@@ -11,6 +11,11 @@ namespace Zoolandia
             this.Name = name;
         }
 
+         public Animal(int age) 
+        {
+            this.Age = age;
+        }
+
         public Animal(string name, int age) 
         {
             this.Name = name;
