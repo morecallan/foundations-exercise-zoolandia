@@ -51,7 +51,26 @@ namespace Zoolandia
 
         public virtual string Sleep()
         {
-            return "Oh, hey look, its " + this.Sleeptime() + ". " + this.Name +  " is fast asleep.";
+            DateTime now = DateTime.Now;
+            int currentHour = now.Hour;
+            
+            bool dayTime;
+            string stringTime;
+            if (currentHour > 4 && currentHour < 9) {
+                dayTime = true;
+                stringTime = "daytime";
+            } else {
+                dayTime = false;
+                stringTime = "nighttime";
+            }
+
+            string sleepingResponse;            
+            if (dayTime == this.Nocturnal) {
+                sleepingResponse = "Oh, hey look, its " + stringTime + ". " + this.Name +  " is fast asleep.";
+            } else {
+                sleepingResponse = "Oh, hey look, its " + stringTime + ". " + this.Name +  " is wide awake! " + this.Name + " sleeps during the " + this.Sleeptime() + ".";                
+            }
+            return sleepingResponse;
         }
 
         private string CuteLine() {
@@ -65,6 +84,14 @@ namespace Zoolandia
         public string Bio()
         {
             return "Behold! A glorious " + this.Species + " in it's natural habitat. Our friend, " + this.Name + " " + CuteLine() + " What type of sexy is " + this.Name + "? " + this.Reproduction + ". " + this.Sleep() + " Let's try feeding our new friend, " + this.Name + ".";
+        }
+
+        public void FeedingTime()
+        {
+            Console.WriteLine("How many foods to you want to feed " + this.Name + " ?");
+            Console.Write("> ");
+            int numOfFoodsInput = Int32.Parse(Console.ReadLine());
+            Console.WriteLine(this.Eat(numOfFoodsInput));
         }
     }
 }

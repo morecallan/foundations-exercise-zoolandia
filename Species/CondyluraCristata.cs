@@ -1,4 +1,5 @@
 using System;
+using System.Globalization;
 using Zoolandia;
 
 namespace Zoolandia.Species
@@ -13,5 +14,10 @@ namespace Zoolandia.Species
             this.Nocturnal = true;
             this.Species = "Condylura Cristata";
         }
+
+        public override string Eat(int numberOfFoods) {
+            return base.Eat(numberOfFoods) + " Thanks for the " + numberOfFoods + " worms, dude.";
+        }
+
     }
 }

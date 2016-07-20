@@ -15,7 +15,15 @@ namespace Zoolandia.Species
         }
 
         public override string Sleep() {
-            return base.Sleep() + " When it gets cold enough, " + this.Name + " will hibernate!";
+            DateTime now = DateTime.Now;
+            int currentMonth = now.Month;
+            string hibernationResponse;
+            if (currentMonth > 3 && currentMonth < 11) {
+                hibernationResponse = "When it gets cold enough, " + this.Name + " will hibernate!";
+            } else {
+                hibernationResponse = "Brrrrr, it's cold outside. " + this.Name + "is hibernating.";
+            }
+            return base.Sleep() + " " + hibernationResponse;
         }
     }
 }
