@@ -66,6 +66,14 @@ namespace Zoolandia
         {
             return "Behold! A glorious " + this.Species + " in it's natural habitat. Our friend, " + this.Name + " " + CuteLine() + " What type of sexy is " + this.Name + "? " + this.Reproduction + ". " + this.Sleep() + " Let's try feeding our new friend, " + this.Name + ".";
         }
+
+        public void FeedingTime()
+        {
+            Console.WriteLine("How many foods to you want to feed " + this.Name + " ?");
+            Console.Write("> ");
+            int numOfFoodsInput = Int32.Parse(Console.ReadLine());
+            Console.WriteLine(this.Eat(numOfFoodsInput));
+        }
     }
 }
 
