@@ -11,6 +11,11 @@ namespace Zoolandia
             this.Name = name;
         }
 
+         public Animal(int age) 
+        {
+            this.Age = age;
+        }
+
         public Animal(string name, int age) 
         {
             this.Name = name;
@@ -24,6 +29,7 @@ namespace Zoolandia
         public bool Nocturnal{get; set;}
         public string Species{get; set;}
         public int Age{get; set;}
+        public string CommonName{get; set;}
         
 
         private string Chew() {

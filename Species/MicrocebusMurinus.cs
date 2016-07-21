@@ -13,5 +13,23 @@ namespace Zoolandia.Species
             this.Nocturnal = true;
             this.Species = "Microcebus Murinus";
         }
+
+        public MicrocebusMurinus(int age) : base(age)
+        {
+            this.Diet = "herbivorous";
+            this.Reproduction = "Swinger";
+            this.Cute = true;
+            this.Nocturnal = true;
+            this.Species = "Microcebus Murinus";
+        }
+
+        public MicrocebusMurinus(string name, int age) : base(name, age)
+        {
+            this.Diet = "herbivorous";
+            this.Reproduction = "Swinger";
+            this.Cute = true;
+            this.Nocturnal = true;
+            this.Species = "Microcebus Murinus";
+        }
     }
 }
