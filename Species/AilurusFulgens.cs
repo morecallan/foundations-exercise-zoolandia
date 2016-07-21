@@ -12,6 +12,7 @@ namespace Zoolandia.Species
             this.Cute = true;
             this.Nocturnal = true;
             this.Species = "Ailurus Fulgens";
+            this.CommonName = "Red Panda";
         }
 
         //Grooming: occurs while in a tree and shortly after awakening or eating
