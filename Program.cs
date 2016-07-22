@@ -67,14 +67,15 @@ namespace Zoolandia
 }
 
 
-//Create a class Animal
+// Create a class Animal
     // Simple properties and methods - general to all animals
     // Use a mix of native C# types for properties
     // Choose one of the general methods that you created in the Animal class and make it virtual.
     // Add a new, overloaded constructor method to your animal that takes a single string as an argument.
     // Add another overloaded constructor method that will set the value of one of the int typed properties of your animal. Define an integer as an argument and then create another instance of your animal and pass it an integer.
     // Add ONE MORE constructor method! This method will accept both an integer and a string as arguments. Set the appropriate property values with the argument values.
-//Create 3 species classes
+// Create 3 species classes
+// Decide on at least 15 species that you would like to include in your zoo and create a class for each species.
     // Create a constructor function for each of your animals. The constructor function should, at the very least, set the initial name of all animals of that type to a name of your choosing.
     // Derive properties and methods from Animal
     // Create some properties that apply only to that species

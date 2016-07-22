@@ -105,5 +105,20 @@ namespace Zoolandia
 
 //Species to create:
 //Bushbaby - Otolemur garnettii.
-//Chinese hamster - Cricetulus griseus.
+//Chinese hamster - Cricetulus griseus
 //Mouse Lemur - Microcebus murinus
+
+//Gorilla
+//Cross River Gorilla - Gorilla Gorilla Diehli
+//Mountain Gorilla - Gorilla Berengei Berengei
+//Western Lowland Gorilla - Gorilla Gorilla Gorilla
+
+//Lemming
+//Wrangel Island Lemming - Lemmus Portenkoi
+//Siberian Brown Lemming - Lemmus Sibiricus
+//Amur Lemming - Lemmus Amurensis
+
+//Spheniscus
+//African Penguin - Spheniscus Demersus
+//Humbolt Penguin - Spheniscus Humboldti
+//Galapagos Penguin - 
