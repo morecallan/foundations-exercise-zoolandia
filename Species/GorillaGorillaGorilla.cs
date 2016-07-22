@@ -2,9 +2,9 @@ using Zoolandia.Genus;
 
 namespace Zoolandia.Species
 {
-    public class GorillaGorillaDiehli : Gorilla 
+    public class GorillaGorillaGorilla : Gorilla 
     {
-        public GorillaGorillaDiehli() : base()
+        public GorillaGorillaGorilla() : base()
         {
             
         }
