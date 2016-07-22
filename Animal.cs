@@ -5,6 +5,10 @@ namespace Zoolandia
 {
     public class Animal
     {
+        public Animal()
+        {
+
+        }
         //Constructor is what you want to know before you interact with them
         public Animal(string name)
         {
@@ -108,17 +112,17 @@ namespace Zoolandia
 //Chinese hamster - Cricetulus griseus
 //Mouse Lemur - Microcebus murinus
 
-//Gorilla
+//Gorilla (Gorilla)
 //Cross River Gorilla - Gorilla Gorilla Diehli
 //Mountain Gorilla - Gorilla Berengei Berengei
 //Western Lowland Gorilla - Gorilla Gorilla Gorilla
 
-//Lemming
+//Lemming (Lemmus)
 //Wrangel Island Lemming - Lemmus Portenkoi
 //Siberian Brown Lemming - Lemmus Sibiricus
 //Amur Lemming - Lemmus Amurensis
 
-//Spheniscus
+//Penguin (Spheniscus) 
 //African Penguin - Spheniscus Demersus
 //Humbolt Penguin - Spheniscus Humboldti
-//Galapagos Penguin - 
+//Galapagos Penguin - Spheniscus Mendiculus

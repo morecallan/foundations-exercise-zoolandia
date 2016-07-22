@@ -45,7 +45,7 @@ namespace Zoolandia
 
                 Console.Write(prompt);
                 int userWantsToKnowMoreAbout = Int32.Parse(Console.ReadLine());
-                if (userWantsToKnowMoreAbout <= myZoo.Count && userWantsToKnowMoreAbout >=0) {
+                if (userWantsToKnowMoreAbout < myZoo.Count && userWantsToKnowMoreAbout >=0) {
                     Console.WriteLine();
                     Console.WriteLine();
                     Console.WriteLine(myZoo[userWantsToKnowMoreAbout].Bio()); 
