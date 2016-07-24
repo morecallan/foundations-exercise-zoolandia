@@ -4,8 +4,14 @@ namespace Zoolandia.Genus
     {
         public Spheniscus() : base()
         {
-
+            this.Reproduction = "monogomous";
         }
 
+        public bool Aerodynamic = true;
+
+        public virtual string MatingRitual()
+        {
+            return "male makes a glorious nest to woo his fabulous mate";
+        }
     }
 }

@@ -66,7 +66,7 @@ namespace Zoolandia
             
             bool dayTime;
             string stringTime;
-            if (currentHour > 4 && currentHour < 9) {
+            if (currentHour > 4 && currentHour < 17) {
                 dayTime = true;
                 stringTime = "daytime";
             } else {

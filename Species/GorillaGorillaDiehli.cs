@@ -6,7 +6,7 @@ namespace Zoolandia.Species
     {
         public GorillaGorillaDiehli() : base()
         {
-            
+            this.CommonName = "Cross River Gorilla";
         }
     }
 }

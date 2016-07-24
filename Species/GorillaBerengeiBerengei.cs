@@ -6,7 +6,8 @@ namespace Zoolandia.Species
     {
         public GorillaBerengeiBerengei() : base()
         {
-            
+            this.CommonName = "Mountain Gorilla";
         }
+
     }
 }

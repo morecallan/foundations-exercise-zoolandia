@@ -6,7 +6,13 @@ namespace Zoolandia.Species
     {
         public GorillaGorillaGorilla() : base()
         {
-            
+            this.CommonName = "Western Lowland Gorilla";
+        }
+
+        public GorillaGorillaGorilla(string name) : base(name)
+        {
+            this.CommonName = "Western Lowland Gorilla";
+            this.Name = name;
         }
     }
 }

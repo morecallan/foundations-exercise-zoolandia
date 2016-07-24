@@ -18,10 +18,6 @@ namespace Zoolandia
             MicrocebusMurinus grayMouseLemur = new MicrocebusMurinus("Lem");
             MicrocebusMurinus greyMouseLemurAged = new MicrocebusMurinus(10);
             MicrocebusMurinus greyMouseLemurNamedAndAged = new MicrocebusMurinus("Lem", 10);
-
-            Console.WriteLine(grayMouseLemur.Age);
-            Console.WriteLine(greyMouseLemurAged.Age);
-            Console.WriteLine(greyMouseLemurNamedAndAged.Age);
             
 
             
@@ -57,9 +53,32 @@ namespace Zoolandia
                 } else {
                     Console.WriteLine();
                     Console.WriteLine();
-                    Console.WriteLine("You effing idiot. How hard is it to type in a dang number. It is literally written RIGHT THERE above the prompt line. HOW MUCH MORE EASY DO I HAVE TO MAKE THIS FOR YOU TURDS?! You know what, fuck this. I'm leaving."); 
-                    keepGoing = false;
+                    Console.WriteLine("You effing idiot. How hard is it to type in a dang number. It is literally written RIGHT THERE above the prompt line. HOW MUCH MORE EASY DO I HAVE TO MAKE THIS FOR YOU TURDS?! You know what, fuck this. I'm leaving.");
+                    Console.WriteLine();
+                    Console.WriteLine(); 
+                    Console.WriteLine("You know what, let's feed a gorilla. Name the gorilla you want to feed.");
+                    Console.Write(prompt);
+                    string gorillaName = Console.ReadLine();
+                    Console.WriteLine();
+                    Console.WriteLine();
+                    GorillaGorillaGorilla myGorillaTestFeed = new GorillaGorillaGorilla(gorillaName);
+                    Console.WriteLine("How many foods do you want to give " + myGorillaTestFeed.Name + "?");                                    
+                    Console.Write(prompt);
+                    int foodsForGorilla = Int32.Parse(Console.ReadLine());
+                    Console.WriteLine();
+                    Console.WriteLine();
+                    Console.WriteLine("Now, type of food. Hint: he likes 'leaves'.");
+                    Console.Write(prompt);
+                    string foodTypeForGorilla = Console.ReadLine();
+                    Console.WriteLine();
+                    Console.WriteLine();
+                    Console.WriteLine(myGorillaTestFeed.Eat(foodsForGorilla, foodTypeForGorilla));
+                    Console.WriteLine();
+                    Console.WriteLine();
                 }
+
+                
+               
                 
             }
         }
