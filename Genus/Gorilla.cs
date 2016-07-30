@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace Zoolandia.Genus
 {
     public abstract class Gorilla : Animal 
@@ -25,9 +27,10 @@ namespace Zoolandia.Genus
             return this.Name + " says: " + eatingMessage;
         }
 
-        public string Play() 
+        public object Play() 
         {
-            return "hug each other, bite, hit or wrestle till one is pulled down on the ground.";
+            List<string> playStyles = new List<string> {"hug", "wrestle", "punch", "slap"};
+            return playStyles;
         }
     }
 }

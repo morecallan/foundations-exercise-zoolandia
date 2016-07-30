@@ -9,9 +9,13 @@ namespace Zoolandia.Genus
 
         public bool Aerodynamic = true;
 
-        public virtual string MatingRitual()
+        public virtual string MatingRitual(Animal animal)
         {
-            return "male makes a glorious nest to woo his fabulous mate";
+            if (animal.Gender == "male") {
+                return "makes a glorious nest to woo his fabulous mate";
+            } else {
+                return "sits around and wait for a nest to get it on in";
+            }
         }
     }
 }

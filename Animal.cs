@@ -34,6 +34,7 @@ namespace Zoolandia
         public string Species{get; set;}
         public int Age{get; set;}
         public string CommonName{get; set;}
+        public string Gender {get; set;}
         
 
         private string Chew() {
@@ -113,6 +114,9 @@ namespace Zoolandia
 //Mouse Lemur - Microcebus murinus
 
 //Gorilla (Gorilla)
+        //eat
+        //sleep
+        //
 //Cross River Gorilla - Gorilla Gorilla Diehli
 //Mountain Gorilla - Gorilla Berengei Berengei
 //Western Lowland Gorilla - Gorilla Gorilla Gorilla
