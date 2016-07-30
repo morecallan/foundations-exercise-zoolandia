@@ -2,7 +2,7 @@ namespace Zoolandia.Genus
 {
     public class Spheniscus : Animal 
     {
-        public Spheniscus() : base()
+        public Spheniscus(string name) : base(name)
         {
             this.Reproduction = "monogomous";
         }

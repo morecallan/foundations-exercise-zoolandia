@@ -2,9 +2,9 @@ namespace Zoolandia.Genus
 {
     public class Lemmus : Animal 
     {
-        public Lemmus() : base()
+        public Lemmus(string name) : base(name)
         {
-
+            
         }
 
         public bool migrationMishap(int numberOfLemmingsInZoo)

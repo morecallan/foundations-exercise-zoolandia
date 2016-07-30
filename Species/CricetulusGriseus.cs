@@ -12,6 +12,7 @@ namespace Zoolandia.Species
             this.Cute = true;
             this.Nocturnal = true;
             this.Species = "Cricetulus Griseus";
+            this.CommonName = "Chinese Hamster";
         }
 
         public override string Sleep() {

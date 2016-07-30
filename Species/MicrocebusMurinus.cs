@@ -12,6 +12,7 @@ namespace Zoolandia.Species
             this.Cute = true;
             this.Nocturnal = true;
             this.Species = "Microcebus Murinus";
+            this.CommonName = "Gray Mouse Lemur";
         }
 
         public MicrocebusMurinus(int age) : base(age)

@@ -4,9 +4,10 @@ namespace Zoolandia.Species
 {
     public class SpheniscusDemersus : Spheniscus 
     {
-        public SpheniscusDemersus() : base()
+        public SpheniscusDemersus(string name) : base(name)
         {
-            
+            this.CommonName = "African Penguin";
+            this.Name = name;
         }
     }
 }
