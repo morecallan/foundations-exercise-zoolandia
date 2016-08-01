@@ -38,8 +38,6 @@ namespace Zoolandia
                Console.WriteLine("Which do you want to learn more about? (Type the number in your command line.)");
 
                 List<Animal> myZoo = new List<Animal>();
-
-                //Adding items to a list is really easy
                 myZoo.Add(redPanda);
                 myZoo.Add(starNosedMole);
                 myZoo.Add(chineseHamster);

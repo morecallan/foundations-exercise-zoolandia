@@ -34,8 +34,6 @@ namespace Zoolandia.Misc
              + "   \"$$$$$\"                      \"\"$$$$\"\"\r\n"
              + "     $$$\"                         $$$$\"\r\n");
             Console.ResetColor();
-
-             
         }
     }    
 }

@@ -4,7 +4,6 @@ namespace Zoolandia.Interfaces
     {
         string CuteLine();
         string Sleep();
-
         string Chew();
     }
 }

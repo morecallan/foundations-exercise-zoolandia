@@ -16,7 +16,8 @@ namespace Zoolandia.Species
             this.CommonName = "Star Nosed Mole";
         }
 
-        public override string Eat(int numberOfFoods) {
+        public override string Eat(int numberOfFoods) 
+        {
             return base.Eat(numberOfFoods) + " Thanks for the " + numberOfFoods + " worms, dude.";
         }
 

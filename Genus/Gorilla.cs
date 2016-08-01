@@ -23,7 +23,10 @@ namespace Zoolandia.Genus
             } else if (typeOfFood != "leaves" && numberOfFoods > 0) {
                 eatingMessage = "thanks but no thanks. i aint gonna eat no " + typeOfFood + ".";
             } else {
-                eatingMessage = "YOU ARE THE WORST. " + this.Name + " eats you and you die."; Symbols.SkullAndCross();
+                eatingMessage = "YOU ARE THE WORST. " + this.Name + " eats you and you die.";
+                Symbols.SkullAndCross();
+                Console.WriteLine(this.Name + " says: " + eatingMessage + " Maybe next time give " + this.Name + " more than " + numberOfFoods + " foods.");
+                System.Environment.Exit(1);
             }
             return this.Name + " says: " + eatingMessage;
         }
