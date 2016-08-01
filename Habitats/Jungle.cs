@@ -5,7 +5,7 @@ namespace Zoolandia.Habitats
 {
     class Jungle : Habitat
     {
-        public Jungle (string name)
+        public Jungle (Animal featuredAnimal) : base(featuredAnimal)
         {
             this.PublicName = "Jungle";
         }

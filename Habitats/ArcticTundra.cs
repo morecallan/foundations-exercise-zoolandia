@@ -5,9 +5,10 @@ namespace Zoolandia.Habitats
 {
     class ArcticTundra : Habitat
     {
-        public ArcticTundra (string name)
+        public ArcticTundra (Animal featuredAnimal) : base(featuredAnimal)
         {
             this.PublicName = "Arcitc Tundra";
+            this.FeaturedAnimal = featuredAnimal;
         }
     }
 }

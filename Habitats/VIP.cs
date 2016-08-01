@@ -5,7 +5,7 @@ namespace Zoolandia.Habitats
 {
     class VIP : Habitat
     {
-        public VIP (string name)
+        public VIP (Animal featuredAnimal) : base(featuredAnimal)
         {
             this.PublicName = "VIP";
         }

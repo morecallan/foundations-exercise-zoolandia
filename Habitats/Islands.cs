@@ -5,7 +5,7 @@ namespace Zoolandia.Habitats
 {
     class Islands : Habitat
     {
-        public Islands (string name)
+        public Islands (Animal featuredAnimal) : base(featuredAnimal)
         {
             this.PublicName = "Islands";
         }
