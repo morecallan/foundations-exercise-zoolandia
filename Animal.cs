@@ -1,10 +1,11 @@
 using System;
-using Zoolandia.Species;
+using Zoolandia.Interfaces;
 
 namespace Zoolandia
 {
-    public class Animal
+    public class Animal : IHaveBio
     {
+        public Animal() {}
         //Constructor is what you want to know before you interact with them
         public Animal(string name)
         {
@@ -30,9 +31,10 @@ namespace Zoolandia
         public string Species{get; set;}
         public int Age{get; set;}
         public string CommonName{get; set;}
+        public string Gender {get; set;}
         
 
-        private string Chew() {
+        public string Chew() {
             return "nom nom nom";
         }
 
@@ -62,7 +64,7 @@ namespace Zoolandia
             
             bool dayTime;
             string stringTime;
-            if (currentHour > 4 && currentHour < 9) {
+            if (currentHour > 4 && currentHour < 17) {
                 dayTime = true;
                 stringTime = "daytime";
             } else {
@@ -79,7 +81,7 @@ namespace Zoolandia
             return sleepingResponse;
         }
 
-        private string CuteLine() {
+        public string CuteLine() {
             if (this.Cute == true) {
                 return "is effin adorable.";
             } else {
@@ -89,7 +91,7 @@ namespace Zoolandia
 
         public string Bio()
         {
-            return "Behold! A glorious " + this.Species + " in it's natural habitat. Our friend, " + this.Name + " " + CuteLine() + " What type of sexy is " + this.Name + "? " + this.Reproduction + ". " + this.Sleep() + " Let's try feeding our new friend, " + this.Name + ".";
+            return "Behold! A glorious " + this.Species + " (or " + this.CommonName + ")" + " in it's natural habitat. Our friend, " + this.Name + " " + CuteLine() + " What type of sexy is " + this.Name + "? " + this.Reproduction + ". " + this.Sleep() + " Let's try feeding our new friend, " + this.Name + ".";
         }
 
         public void FeedingTime()
@@ -105,5 +107,23 @@ namespace Zoolandia
 
 //Species to create:
 //Bushbaby - Otolemur garnettii.
-//Chinese hamster - Cricetulus griseus.
+//Chinese hamster - Cricetulus griseus
 //Mouse Lemur - Microcebus murinus
+
+//Gorilla (Gorilla)
+        //eat
+        //sleep
+        //
+//Cross River Gorilla - Gorilla Gorilla Diehli
+//Mountain Gorilla - Gorilla Berengei Berengei
+//Western Lowland Gorilla - Gorilla Gorilla Gorilla
+
+//Lemming (Lemmus)
+//Wrangel Island Lemming - Lemmus Portenkoi
+//Siberian Brown Lemming - Lemmus Sibiricus
+//Amur Lemming - Lemmus Amurensis
+
+//Penguin (Spheniscus) 
+//African Penguin - Spheniscus Demersus
+//Humbolt Penguin - Spheniscus Humboldti
+//Galapagos Penguin - Spheniscus Mendiculus

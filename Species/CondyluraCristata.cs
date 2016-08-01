@@ -13,9 +13,11 @@ namespace Zoolandia.Species
             this.Cute = false;
             this.Nocturnal = true;
             this.Species = "Condylura Cristata";
+            this.CommonName = "Star Nosed Mole";
         }
 
-        public override string Eat(int numberOfFoods) {
+        public override string Eat(int numberOfFoods) 
+        {
             return base.Eat(numberOfFoods) + " Thanks for the " + numberOfFoods + " worms, dude.";
         }
 
