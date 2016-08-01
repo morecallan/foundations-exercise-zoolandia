@@ -14,7 +14,7 @@ namespace Zoolandia.Species
             this.Species = "Cricetulus Griseus";
             this.CommonName = "Chinese Hamster";
         }
-
+        
         public override string Sleep() {
             DateTime now = DateTime.Now;
             int currentMonth = now.Month;

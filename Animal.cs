@@ -1,14 +1,11 @@
 using System;
-using Zoolandia.Species;
+using Zoolandia.Interfaces;
 
 namespace Zoolandia
 {
-    public class Animal
+    public class Animal : IHaveBio
     {
-        public Animal()
-        {
-
-        }
+        public Animal() {}
         //Constructor is what you want to know before you interact with them
         public Animal(string name)
         {
@@ -37,7 +34,7 @@ namespace Zoolandia
         public string Gender {get; set;}
         
 
-        private string Chew() {
+        public string Chew() {
             return "nom nom nom";
         }
 
@@ -84,7 +81,7 @@ namespace Zoolandia
             return sleepingResponse;
         }
 
-        private string CuteLine() {
+        public string CuteLine() {
             if (this.Cute == true) {
                 return "is effin adorable.";
             } else {
@@ -94,7 +91,7 @@ namespace Zoolandia
 
         public string Bio()
         {
-            return "Behold! A glorious " + this.Species + " in it's natural habitat. Our friend, " + this.Name + " " + CuteLine() + " What type of sexy is " + this.Name + "? " + this.Reproduction + ". " + this.Sleep() + " Let's try feeding our new friend, " + this.Name + ".";
+            return "Behold! A glorious " + this.Species + " (or " + this.CommonName + ")" + " in it's natural habitat. Our friend, " + this.Name + " " + CuteLine() + " What type of sexy is " + this.Name + "? " + this.Reproduction + ". " + this.Sleep() + " Let's try feeding our new friend, " + this.Name + ".";
         }
 
         public void FeedingTime()

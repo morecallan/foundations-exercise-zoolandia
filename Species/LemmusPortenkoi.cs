@@ -7,6 +7,7 @@ namespace Zoolandia.Species
         public LemmusPortenkoi(string name) : base(name)
         {
             this.CommonName = "Wrangel Island Lemming";
+            this.Species = "Lemmus Portenkoi";
             this.Name = name;
         }
     }

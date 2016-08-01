@@ -1,5 +1,6 @@
 ﻿using System;
 using Zoolandia.Species;
+using Zoolandia.Misc;
 using System.Collections.Generic;
 
 
@@ -15,12 +16,22 @@ namespace Zoolandia
             AilurusFulgens redPanda = new AilurusFulgens("Randy Panda");
             CondyluraCristata starNosedMole = new CondyluraCristata("Hector");
             CricetulusGriseus chineseHamster = new CricetulusGriseus("Wang Haw");
+
             MicrocebusMurinus grayMouseLemur = new MicrocebusMurinus("Lem");
             MicrocebusMurinus greyMouseLemurAged = new MicrocebusMurinus(10);
             MicrocebusMurinus greyMouseLemurNamedAndAged = new MicrocebusMurinus("Lem", 10);
-            
 
-            
+            GorillaBerengeiBerengei mountainGorilla = new GorillaBerengeiBerengei("Phil");
+            GorillaGorillaDiehli crossRiverGorilla = new GorillaGorillaDiehli("Mark");
+            GorillaGorillaGorilla westernLowlandGorilla = new GorillaGorillaGorilla("Craig");
+
+            LemmusAmurensis amurLemming = new LemmusAmurensis("Larry");
+            LemmusPortenkoi wrangelIslandLemming = new LemmusPortenkoi("Luke");
+            LemmusSibiricus brownLemming = new LemmusSibiricus("Lonny");
+
+            SpheniscusDemersus africanPenguin = new SpheniscusDemersus("Patch");
+            SpheniscusHumboldti humboldtPenguin = new SpheniscusHumboldti("Perry");
+            SpheniscusMendiculus galapagosPenguin = new SpheniscusMendiculus("Pete");
 
             while (keepGoing)
             {
@@ -33,6 +44,16 @@ namespace Zoolandia
                 myZoo.Add(starNosedMole);
                 myZoo.Add(chineseHamster);
                 myZoo.Add(grayMouseLemur);
+                myZoo.Add(mountainGorilla);
+                myZoo.Add(crossRiverGorilla);
+                myZoo.Add(westernLowlandGorilla);
+                myZoo.Add(amurLemming);
+                myZoo.Add(wrangelIslandLemming);
+                myZoo.Add(brownLemming);
+                myZoo.Add(africanPenguin);
+                myZoo.Add(humboldtPenguin);
+                myZoo.Add(galapagosPenguin);
+                
 
                 for (int i = 0; i < myZoo.Count; i++)
                 {
@@ -53,9 +74,11 @@ namespace Zoolandia
                 } else {
                     Console.WriteLine();
                     Console.WriteLine();
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("You effing idiot. How hard is it to type in a dang number. It is literally written RIGHT THERE above the prompt line. HOW MUCH MORE EASY DO I HAVE TO MAKE THIS FOR YOU TURDS?! You know what, fuck this. I'm leaving.");
                     Console.WriteLine();
                     Console.WriteLine(); 
+                    Console.ResetColor();
                     Console.WriteLine("You know what, let's feed a gorilla. Name the gorilla you want to feed.");
                     Console.Write(prompt);
                     string gorillaName = Console.ReadLine();
@@ -76,10 +99,6 @@ namespace Zoolandia
                     Console.WriteLine();
                     Console.WriteLine();
                 }
-
-                
-               
-                
             }
         }
     }

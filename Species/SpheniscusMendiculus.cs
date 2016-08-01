@@ -7,6 +7,7 @@ namespace Zoolandia.Species
         public SpheniscusMendiculus(string name) : base(name)
         {
             this.CommonName = "Galapagos Penguin";
+            this.Species = "Spheniscus Mendiculus";          
             this.Name = name;
         }
     }

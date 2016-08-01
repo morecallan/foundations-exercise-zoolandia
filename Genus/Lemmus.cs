@@ -4,7 +4,8 @@ namespace Zoolandia.Genus
     {
         public Lemmus(string name) : base(name)
         {
-            
+            this.Cute = true;
+            this.Reproduction = "wild and fast";
         }
 
         public bool migrationMishap(int numberOfLemmingsInZoo)

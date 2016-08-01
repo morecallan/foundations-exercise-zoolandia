@@ -7,6 +7,7 @@ namespace Zoolandia.Species
         public SpheniscusDemersus(string name) : base(name)
         {
             this.CommonName = "African Penguin";
+            this.Species = "Spheniscus Demersus";
             this.Name = name;
         }
     }

@@ -7,6 +7,7 @@ namespace Zoolandia.Species
         public GorillaBerengeiBerengei(string name) : base(name)
         {
             this.Name = name;
+            this.Species = "Gorilla Berengei Berengei";
             this.CommonName = "Mountain Gorilla";
         }
 

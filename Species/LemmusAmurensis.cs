@@ -7,6 +7,7 @@ namespace Zoolandia.Species
         public LemmusAmurensis(string name) : base(name)
         {
             this.CommonName = "Amur Lemming";
+            this.Species = "Lemmus Amurensis";
             this.Name = name;
         }
     }

@@ -5,6 +5,7 @@ namespace Zoolandia.Genus
         public Spheniscus(string name) : base(name)
         {
             this.Reproduction = "monogomous";
+            this.Cute = true;
         }
 
         public bool Aerodynamic = true;
